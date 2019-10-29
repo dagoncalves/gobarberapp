@@ -7,8 +7,6 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import { Container, DateButton, DateText } from './styles';
 
 export default function DateInput({ date, onChange }) {
-  const [opened, setOpened] = useState(false);
-
   const dateFormatted = useMemo(
     () => format(date, "dd 'de' MMMM 'de' yyyy", { locale: pt }),
     [date]
